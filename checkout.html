@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thala7 - Shopping Cart</title>
+    <title>Checkout - Thala 7</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -55,42 +55,40 @@
         </nav>
     </header>
 
-    <main class="cart-main">
-        <h1>Shopping Cart</h1>
 
-        <section class="sc-main">
-            <div class="sc-item">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Seven By M.S. Dhoni Women's Hogun Multi-Color Running Shoes</td>
-                            <td>₹3,999.00</td>
-                            <td><span class="minus-one">-</span> 1 <span class="plus-one">+</span></td>
-                            <td class="item-remove">x</td>
-                        </tr>
-                         <tr>
-                            <td>Seven By M.S. Dhoni Women's Hogun Multi-Color Running Shoes</td>
-                            <td>₹3,999.00</td>
-                            <td><span class="minus-one">-</span> 1 <span class="plus-one">+</span></td>
-                            <td class="item-remove">x</td>
-                        </tr>
-                         <tr>
-                            <td>Seven By M.S. Dhoni Women's Hogun Multi-Color Running Shoes</td>
-                            <td>₹3,999.00</td>
-                            <td><span class="minus-one">-</span> 1 <span class="plus-one">+</span></td>
-                            <td class="item-remove" >x</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div class="checkout-head">
+        <h4>
+            Checkout
+        </h4>
+    </div>
 
+    <main class="checkout-main">
+
+        <section class="left-checkout">
+            <h2>Contact </h2>
+            <form class="checkout-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="micky mouse" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="bhot_mehnat_hai@example.com" required>
+                </form>
+
+            <h2>Payment</h2>
+            
+            <form class="checkout-form">
+                <label for="card">Card Number</label>
+                <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+        </section>
+
+        <section class="right-checkout">
             <div class="sc-bill">
                 <h4>Enter Coupon Code</h4>
                 <div class="coupon">
@@ -103,15 +101,9 @@
                 <p>Shipping: <span class="r-bill">₹0.00</span></p>
                 <p>Total: <span class="r-bill">₹3,999.00</span></p>
                 </div>
-                <button class="checkout-btn"> <a href="checkout.html">Proceed to Checkout</a></button>
+                <button class="checkout-btn"> Pay Now</button>
             </div>
         </section>
-
-        <div class="continue-shopping">
-            <a href="shoe-page.html"> < Continue Shopping</a>
-        </div>
-    
     </main>
-
 </body>
 </html>
